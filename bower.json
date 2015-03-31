@@ -1,0 +1,20 @@
+{
+  "name": "mini-router",
+  "version": "0.0.1",
+  "homepage": "https://github.com/onedesign/mini-router",
+  "authors": [
+    "One Design Company"
+  ],
+  "description": "An extremely simple router for firing page-specific javascript.",
+  "main": "mini_router.js",
+  "keywords": [
+    "routing",
+    "router"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test"
+  ]
+}
