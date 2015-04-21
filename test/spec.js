@@ -30,5 +30,5 @@ it('should find a route with one undefined segment', function () {
 });
 
 it('should find a route with multiple segments', function () {
-  assert.isTrue(router.matchPathToRoute('/thing/(.*)', '/thing/something'));
+  assert.isTrue(router.matchPathToRoute('/the-institute/(.*)', '/the-institute/team'));
 });

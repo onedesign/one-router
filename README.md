@@ -22,5 +22,6 @@ var router = new MiniRouter({
 Run tests on command line with:
 
 ```
+npm install
 npm test
 ```
