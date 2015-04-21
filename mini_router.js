@@ -43,13 +43,12 @@ function MiniRouter(routes) {
   };
  
   var _route = function() {
-    var currentUrl = document.URL;
+    var currentUrl = window.location.pathname;
     
     // Run through each route until we find a match
     for (var key in self.routes) {
       var routeFunction = self.routes[key];
-      var re = new RegExp(key, 'i');
-      var matchResult = currentUrl.match(re);
+      var matchResult = self.matchPathToRoute(currentUrl, key)
       if (matchResult) routeFunction();
     }
   };
@@ -64,6 +63,12 @@ function MiniRouter(routes) {
     for (var key in routeObject) {
       self.routes[key] = routeObject[key];
     }
+  };
+
+  self.matchPathToRoute = function(routeRegExp, str) {
+    var re = new RegExp(routeRegExp, 'i');
+    var matchResult = str.match(re);
+    return (matchResult) ? true : false;
   };
  
   // Initiate

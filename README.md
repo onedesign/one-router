@@ -16,3 +16,11 @@ var router = new MiniRouter({
     '/work/(.*)': function() {}
 });
 ```
+
+## Testing:
+
+Run tests on command line with:
+
+```
+npm test
+```
