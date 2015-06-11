@@ -48,7 +48,7 @@ function MiniRouter(routes) {
     // Run through each route until we find a match
     for (var key in self.routes) {
       var routeFunction = self.routes[key];
-      var matchResult = self.matchPathToRoute(key, currentUrl)
+      var matchResult = self.matchPathToRoute(key, currentUrl);
       if (matchResult) routeFunction();
     }
   };
