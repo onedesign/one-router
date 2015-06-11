@@ -25,3 +25,11 @@ Run tests on command line with:
 npm install
 npm test
 ```
+
+## Releasing:
+
+```
+git commit -am "Fix some bugs."
+bower version 1.x.x
+git push origin master && git push --tags
+```
