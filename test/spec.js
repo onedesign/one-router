@@ -4,12 +4,14 @@ var APP = {
   indexRoute: function () {},
   segmentRoute: function () {},
   multipathRoute: function () {}
+
 };
 
 var routes = {
   '/$':               APP.indexRoute,
   '/(.*)':            APP.segmentRoute,
-  '/multipath/(.*)':  APP.multipathRoute
+  '/multipath/(.*)':  APP.multipathRoute,
+  '/error':           null
 };
 
 var router = new MiniRouter(routes);
@@ -31,4 +33,12 @@ it('should find a route with one undefined segment', function () {
 
 it('should find a route with multiple segments', function () {
   assert.isTrue(router.matchPathToRoute('/the-institute/(.*)', '/the-institute/team'));
+});
+
+it('should error if no function is defined for a route', function () {
+  assert.throw(function() { router.route('/error') }, Error);
+});
+
+it('should NOT error if a function is defined for a route', function () {
+  assert.doesNotThrow(function() { router.route('/$') }, Error);
 });
