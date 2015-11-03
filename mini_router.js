@@ -88,3 +88,15 @@ function MiniRouter(routes) {
   // Return the Object
   return self;
 }
+
+if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
+  module.exports = MiniRouter;
+} else {
+  if (typeof define === 'function' && define.amd) {
+    define([], function() {
+      return MiniRouter;
+    });
+  } else {
+    window.MiniRouter = MiniRouter;
+  }
+}
