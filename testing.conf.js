@@ -15,7 +15,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      { pattern: './mini_router.js', watched: true, included: true, served: true },
+      { pattern: './one_router.js', watched: true, included: true, served: true },
       'test/spec.js'
     ],
 

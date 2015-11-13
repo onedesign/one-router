@@ -1,14 +1,14 @@
 {
-  "name": "mini-router",
-  "version": "0.0.0",
+  "name": "one-router",
+  "version": "0.0.5",
   "description": "An extremely simple router for firing page-specific javascript when the page first loads.",
-  "main": "mini_router.js",
+  "main": "one_router.js",
   "scripts": {
     "test": "karma start testing.conf.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/onedesign/mini-router.git"
+    "url": "https://github.com/onedesign/one-router.git"
   },
   "keywords": [
     "routing",
@@ -17,9 +17,9 @@
   "author": "Chris Malven",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/onedesign/mini-router/issues"
+    "url": "https://github.com/onedesign/one-router/issues"
   },
-  "homepage": "https://github.com/onedesign/mini-router",
+  "homepage": "https://github.com/onedesign/one-router",
   "private": true,
   "devDependencies": {
     "chai": "^2.2.0",

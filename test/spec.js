@@ -14,7 +14,7 @@ var routes = {
   '/error':           null
 };
 
-var router = new MiniRouter(routes);
+var router = new OneRouter(routes);
 
 // Tests
 

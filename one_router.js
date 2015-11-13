@@ -1,14 +1,14 @@
 (function() {
-  function MiniRouter(routes) {
+  function OneRouter(routes) {
     
     /*
     USAGE:
     
-    On instantiation, MiniRouter expects to receive a route object
+    On instantiation, OneRouter expects to receive a route object
     with each key as a URL regex and each value as a function to call when
     the route regex matches the current URL.
 
-    var router = new MiniRouter({
+    var router = new OneRouter({
       '/$': function() {},
       '/about': function() {},
       '/approach': function() {},
@@ -91,14 +91,14 @@
   }
 
   if (typeof module !== 'undefined' && typeof module.exports !== 'undefined') {
-    module.exports = MiniRouter;
+    module.exports = OneRouter;
   } else {
     if (typeof define === 'function' && define.amd) {
       define([], function() {
-        return MiniRouter;
+        return OneRouter;
       });
     } else {
-      window.MiniRouter = MiniRouter;
+      window.OneRouter = OneRouter;
     }
   }
 })();

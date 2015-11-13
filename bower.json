@@ -1,12 +1,12 @@
 {
-  "name": "mini-router",
+  "name": "one-router",
   "version": "0.0.5",
-  "homepage": "https://github.com/onedesign/mini-router",
+  "homepage": "https://github.com/onedesign/one-router",
   "authors": [
     "One Design Company"
   ],
   "description": "An extremely simple router for firing page-specific javascript.",
-  "main": "mini_router.js",
+  "main": "one_router.js",
   "keywords": [
     "routing",
     "router"
