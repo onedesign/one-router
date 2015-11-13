@@ -1,0 +1,71 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/Users/cmalven/local/bin/npm', 'publish' ]
+2 info using npm@2.1.6
+3 info using node@v0.10.33
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/cmalven/Code/one-router',
+7 silly cache add   type: 'directory' }
+8 verbose tar pack [ '/Users/cmalven/.npm/one-router/0.0.5/package.tgz',
+8 verbose tar pack   '/Users/cmalven/Code/one-router' ]
+9 verbose tarball /Users/cmalven/.npm/one-router/0.0.5/package.tgz
+10 verbose folder /Users/cmalven/Code/one-router
+11 info prepublish one-router@0.0.5
+12 verbose addLocalTarball adding from inside cache /Users/cmalven/.npm/one-router/0.0.5/package.tgz
+13 silly cache afterAdd one-router@0.0.5
+14 verbose afterAdd /Users/cmalven/.npm/one-router/0.0.5/package/package.json not in flight; writing
+15 verbose afterAdd /Users/cmalven/.npm/one-router/0.0.5/package/package.json written
+16 silly publish { name: 'one-router',
+16 silly publish   version: '0.0.5',
+16 silly publish   description: 'An extremely simple router for firing page-specific javascript when the page first loads.',
+16 silly publish   main: 'one_router.js',
+16 silly publish   scripts: { test: 'karma start testing.conf.js' },
+16 silly publish   repository:
+16 silly publish    { type: 'git',
+16 silly publish      url: 'https://github.com/onedesign/one-router.git' },
+16 silly publish   keywords: [ 'routing', 'router' ],
+16 silly publish   author: { name: 'Chris Malven' },
+16 silly publish   license: 'ISC',
+16 silly publish   bugs: { url: 'https://github.com/onedesign/one-router/issues' },
+16 silly publish   homepage: 'https://github.com/onedesign/one-router',
+16 silly publish   private: true,
+16 silly publish   devDependencies:
+16 silly publish    { chai: '^2.2.0',
+16 silly publish      karma: '^0.12.31',
+16 silly publish      'karma-chai': '^0.1.0',
+16 silly publish      'karma-clear-screen-reporter': '0.0.1',
+16 silly publish      'karma-mocha': '^0.1.10',
+16 silly publish      'karma-phantomjs-launcher': '^0.1.4' },
+16 silly publish   readme: '# OneRouter\n\nAn extremely simple router for firing page-specific javascript when the page first loads. It isn\'t meant to be used on the server and it isn\'t meant to be used for single pages apps.\n\n## Usage:\n\nOn instantiation, OneRouter expects to receive a route object\nwith each key as a URL regex and each value as a function to call when\nthe route regex matches the current URL.\n\n```js\nvar router = new OneRouter({\n    \'/$\': function() {},\n    \'/about\': function() {},\n    \'/approach\': function() {},\n    \'/work/(.*)\': function() {}\n});\n```\n\n## Testing:\n\nRun tests on command line with:\n\n```\nnpm install\nnpm test\n```\n\n## Releasing:\n\n```\ngit commit -am "Fix some bugs."\nbower version 1.x.x\nnpm version <major | minor | patch>\ngit push origin master && git push --tags\nnpm publish\n```',
+16 silly publish   readmeFilename: 'README.md',
+16 silly publish   gitHead: '36edb29c47afcfbceb20f6a8652c8704c0ab5cfd',
+16 silly publish   _id: 'one-router@0.0.5',
+16 silly publish   _shasum: '1554cad523e6a50335506a5924e4e2b24e0b802c',
+16 silly publish   _from: '.' }
+17 verbose stack Error: This package has been marked as private
+17 verbose stack Remove the 'private' field from the package.json to publish it.
+17 verbose stack     at publish_ (/Users/cmalven/local/lib/node_modules/npm/lib/publish.js:98:5)
+17 verbose stack     at Array.1 (/Users/cmalven/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+17 verbose stack     at LOOP (/Users/cmalven/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+17 verbose stack     at LOOP (/Users/cmalven/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+17 verbose stack     at chain (/Users/cmalven/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+17 verbose stack     at /Users/cmalven/local/lib/node_modules/npm/lib/publish.js:64:5
+17 verbose stack     at RES (/Users/cmalven/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+17 verbose stack     at f (/Users/cmalven/local/lib/node_modules/npm/node_modules/once/once.js:17:25)
+17 verbose stack     at /Users/cmalven/local/lib/node_modules/npm/lib/cache.js:345:14
+17 verbose stack     at /Users/cmalven/local/lib/node_modules/npm/node_modules/write-file-atomic/index.js:29:15
+18 verbose cwd /Users/cmalven/Code/one-router
+19 error Darwin 14.3.0
+20 error argv "node" "/Users/cmalven/local/bin/npm" "publish"
+21 error node v0.10.33
+22 error npm  v2.1.6
+23 error This package has been marked as private
+23 error Remove the 'private' field from the package.json to publish it.
+24 error If you need help, you may report this error at:
+24 error     <http://github.com/npm/npm/issues>
+25 verbose exit [ 1, true ]

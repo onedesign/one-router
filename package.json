@@ -20,7 +20,7 @@
     "url": "https://github.com/onedesign/one-router/issues"
   },
   "homepage": "https://github.com/onedesign/one-router",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "chai": "^2.2.0",
     "karma": "^0.12.31",
